@@ -6,7 +6,7 @@
 /*   By: sregnard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 17:21:30 by sregnard          #+#    #+#             */
-/*   Updated: 2018/11/24 09:54:12 by sregnard         ###   ########.fr       */
+/*   Updated: 2019/02/07 13:49:31 by sregnard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 
 size_t	ft_strlen(const char *s)
 {
-	int len;
+	const char	*start = s;
 
-	len = 0;
-	while (s && s[len])
-		len++;
-	return (len);
+	while (s && *s)
+		++s;
+	return (s - start);
 }
