@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_ptcmp.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sregnard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/09 17:16:49 by sregnard          #+#    #+#             */
-/*   Updated: 2019/03/21 16:21:39 by sregnard         ###   ########.fr       */
+/*   Created: 2019/09/02 17:13:03 by sregnard          #+#    #+#             */
+/*   Updated: 2019/09/02 17:14:17 by sregnard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "point.h"
 
-void	ft_putendl(char const *s)
+int		ft_ptcmp(t_point *pt1, t_point *pt2)
 {
-	if (s)
-	{
-		ft_putstr(s);
-		ft_putchar('\n');
-	}
+	return (pt1->x == pt2->x && pt1->y == pt2->y && pt1->z == pt2->z);
 }

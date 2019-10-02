@@ -6,7 +6,7 @@
 /*   By: sregnard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 14:49:24 by sregnard          #+#    #+#             */
-/*   Updated: 2018/12/18 08:47:58 by sregnard         ###   ########.fr       */
+/*   Updated: 2019/03/21 16:21:21 by sregnard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@
 # include "read_file.h"
 # include "point.h"
 # include "map.h"
+# include "ft_printf.h"
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);
@@ -39,7 +40,7 @@ int					ft_isascii(int c);
 int					ft_isprint(int c);
 int					ft_isspace(int c);
 int					ft_isnumber(char *s);
-int					ft_ishexa(char *s);
+int					ft_isinteger(char *s);
 
 size_t				ft_strlen(const char *s);
 char				*ft_strdup(const char *s1);
@@ -93,6 +94,7 @@ int					ft_factorial(unsigned int n);
 
 void				ft_print_tab(char **tab);
 void				ft_free_tab(char ***ptr_tab);
+void				ft_remove_elem_tab(char **tab);
 int					ft_nb_str_tab(char **tab);
 int					ft_max_strlen_tab(char **tab);
 int					*ft_atoi_tab(char **tab, int size);

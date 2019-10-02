@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl.c                                       :+:      :+:    :+:   */
+/*   ft_remove_elem_tab.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sregnard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/09 17:16:49 by sregnard          #+#    #+#             */
-/*   Updated: 2019/03/21 16:21:39 by sregnard         ###   ########.fr       */
+/*   Created: 2019/03/21 16:13:24 by sregnard          #+#    #+#             */
+/*   Updated: 2019/04/07 13:45:27 by sregnard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_putendl(char const *s)
+void	ft_remove_elem_tab(char **tab)
 {
-	if (s)
+	int	i;
+
+	i = 0;
+	while (tab + i && tab[i])
 	{
-		ft_putstr(s);
-		ft_putchar('\n');
+		tab[i] = tab[i + 1];
+		++i;
 	}
 }
