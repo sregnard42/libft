@@ -6,7 +6,7 @@
 /*   By: sregnard <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 14:49:24 by sregnard          #+#    #+#             */
-/*   Updated: 2019/03/21 16:21:21 by sregnard         ###   ########.fr       */
+/*   Updated: 2019/10/23 18:29:54 by sregnard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 # include "point.h"
 # include "map.h"
 # include "ft_printf.h"
+# include "error.h"
 
 void				*ft_memset(void *b, int c, size_t len);
 void				ft_bzero(void *s, size_t n);

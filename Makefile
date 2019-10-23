@@ -6,7 +6,7 @@
 #    By: sregnard <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/07 14:51:18 by sregnard          #+#    #+#              #
-#    Updated: 2019/09/02 17:14:47 by sregnard         ###   ########.fr        #
+#    Updated: 2019/10/23 18:31:02 by sregnard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,8 @@ HEADERS			=	libft.h			\
 					list.h			\
 					map.h			\
 					point.h			\
-					read_file.h
+					read_file.h		\
+					error.h
 DEPENDENCIES	+=	$(addprefix $(HEADDIR), $(HEADERS))
 
 SRCDIR			=	srcs/
@@ -116,7 +117,8 @@ SRC				+=	$(addprefix $(SRCDIR)$(SUBDIR), $(SRCNAME))
 SUBDIR			=	utils/
 SRCNAME			=	ft_toupper.c \
 					ft_tolower.c \
-					ft_swap.c		
+					ft_swap.c	\
+					ft_error.c	
 SRC				+=	$(addprefix $(SRCDIR)$(SUBDIR), $(SRCNAME))
 
 SUBDIR			=	conversion/
